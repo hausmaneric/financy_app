@@ -13,7 +13,7 @@ class OnboardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(children: [
-        Expanded(flex: 1, child: Container(alignment: Alignment.bottomCenter,color: AppColors.iceWhite, child: Padding(padding: const EdgeInsets.all(10),child: Image.asset('assets/images/onboarding_image.png'),),)),
+        Expanded(flex: 2, child: Container(alignment: Alignment.bottomCenter,color: AppColors.iceWhite, child: Padding(padding: const EdgeInsets.all(10),child: Image.asset('assets/images/onboarding_image.png'),),)),
         Expanded(child: Container(color: Colors.white, child: Column(mainAxisAlignment: MainAxisAlignment.center,children: [
           const SizedBox(height: 25.0,), 
           Text("Spend Smarter Save More", style: AppTextStyles.mediumText.copyWith(color: AppColors.greenlightTwo), textAlign: TextAlign.center),
