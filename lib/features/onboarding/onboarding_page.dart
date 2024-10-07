@@ -1,6 +1,7 @@
 
 import 'package:financy_app/common/constants/app_colors.dart';
 import 'package:financy_app/common/constants/app_text_styles.dart';
+import 'package:financy_app/common/constants/routes.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/widgets/multi_text_button.dart';
@@ -18,9 +19,9 @@ class OnboardingPage extends StatelessWidget {
           const SizedBox(height: 25.0,), 
           Text("Spend Smarter Save More", style: AppTextStyles.mediumText.copyWith(color: AppColors.greenlightTwo), textAlign: TextAlign.center),
           const SizedBox(height: 25.0,), 
-          Padding(padding: const EdgeInsets.symmetric(horizontal: 32),child: PrimaryButton(text: 'Get Started', onPressed: (){},),),
+          Padding(padding: const EdgeInsets.symmetric(horizontal: 32),child: PrimaryButton(text: 'Get Started', onPressed: (){Navigator.pushNamed(context, NamedRoute.signUp);},),),
           const SizedBox(height: 20.0,), 
-          MuiltiTextButton(children: [Text("Already have account?", style: AppTextStyles.smallText.copyWith(color: AppColors.grey),), Text(" Log In", style: AppTextStyles.smallText.copyWith(color: AppColors.greenlightOne),),],onPressed: (){},)
+          MuiltiTextButton(children: [Text("Already have account?", style: AppTextStyles.smallText.copyWith(color: AppColors.grey),), Text(" Log In", style: AppTextStyles.smallText.copyWith(color: AppColors.greenlightOne),),],onPressed: (){Navigator.pushNamed(context, NamedRoute.signIn);},)
         ],),))
       ],),
     );

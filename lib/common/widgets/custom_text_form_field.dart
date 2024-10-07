@@ -50,8 +50,8 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
             _helperText = widget.helperText;
           });
         }
-      },validator: widget.validator,obscureText: widget.obscureText ?? false,textInputAction: widget.textInputAction,maxLength: widget.maxLength,keyboardType: widget.keyboardType,controller: widget.controller,textCapitalization: widget.textCapitalization ?? TextCapitalization.none,decoration: InputDecoration(
-        helperText: _helperText, helperMaxLines: 3, suffixIcon: widget.suffixIcon,hintText: widget.hintText, hintStyle: AppTextStyles.smallText.copyWith(color: AppColors.lightGrey),floatingLabelBehavior: FloatingLabelBehavior.always,labelText: widget.labelText?.toUpperCase(), labelStyle: AppTextStyles.smallText.copyWith(color: AppColors.lightGrey),border: defaultBorder, focusedBorder: defaultBorder, errorBorder: defaultBorder.copyWith(borderSide: const BorderSide(color: Colors.red)), enabledBorder: defaultBorder, disabledBorder: defaultBorder,),),
+      },validator: widget.validator,obscureText: widget.obscureText ?? false,textInputAction: widget.textInputAction,maxLength: widget.maxLength,keyboardType: widget.keyboardType,controller: widget.controller,textCapitalization: widget.textCapitalization ?? TextCapitalization.none,
+      decoration: InputDecoration(errorMaxLines: 3,helperText: _helperText, helperMaxLines: 3, suffixIcon: widget.suffixIcon,hintText: widget.hintText, hintStyle: AppTextStyles.smallText.copyWith(color: AppColors.lightGrey),floatingLabelBehavior: FloatingLabelBehavior.always,labelText: widget.labelText?.toUpperCase(), labelStyle: AppTextStyles.smallText.copyWith(color: AppColors.lightGrey),border: defaultBorder, focusedBorder: defaultBorder, errorBorder: defaultBorder.copyWith(borderSide: const BorderSide(color: Colors.red)), enabledBorder: defaultBorder, disabledBorder: defaultBorder,),),
     );
   }
 }

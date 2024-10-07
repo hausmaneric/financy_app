@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "916471051478",
+    "project_id": "backup-47bef",
+    "storage_bucket": "backup-47bef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916471051478:android:4dfa202bfecd5159694577",
+        "android_client_info": {
+          "package_name": "dev.hausman.financy.financy_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuOWH8zy8QoO_Ght42vr6GFC79_cYNzuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
